@@ -1,0 +1,60 @@
+.Card {
+    height: 55vh;
+    width: 20vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.upper{
+    height: 50vh;
+    width: 20vw;
+    background-color: black;
+    border-radius: 25px 25px 0 0;
+}
+
+.upper img {
+    border-radius: 25px 25px 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lower{
+    height: 30vh;
+    margin: 1vh;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+    overflow:hidden;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9vw;
+}
+
+.buttons {
+    margin-top: 2vh;
+}
+
+.buttons a {
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 1vw;
+    color: black;
+    margin: 1vh;
+    padding: 1vh;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttons a:hover{
+    background-color: black;
+    color: white;
+}
