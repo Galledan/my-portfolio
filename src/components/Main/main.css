@@ -46,10 +46,14 @@ video {
     margin-inline: 0.1vw;
 }
 
+ .box i{
+    text-shadow: 5px 10px rgba(0, 0, 0, 0.37);
+}
+
 .top-box {
     width: 13vw;
     height: 20vh;
-    background-color: rgba(8, 8, 163, 0.9);
+    background: linear-gradient(0deg, rgba(0,24,71,1) 0%, rgba(8,8,163,1) 100%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -72,6 +76,7 @@ video {
     color: white;
     opacity: 0;
     font-size: 1.5vw;
+    font-weight: 100;
 }
 
 .box:hover {
