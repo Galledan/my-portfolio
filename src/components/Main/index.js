@@ -10,7 +10,7 @@ import Contact from "../Contact";
 function Main() {
   const [isLoading, setLoading] = useState(false);
   const [page, setPage] = useState(0);
-
+  
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

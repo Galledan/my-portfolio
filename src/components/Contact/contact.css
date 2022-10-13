@@ -1,0 +1,93 @@
+.Contact {
+    width: 100%;
+    height: 80vh;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input, textarea {
+    background: linear-gradient(0deg, rgb(114, 116, 0) 0%, rgb(229, 255, 0) 100%);
+    font-size: 1vw;
+    -webkit-text-fill-color: black;
+    margin: 1vh;
+    width: 40vw;
+}
+
+.form-container button{
+    background-color: rgba(255, 255, 255, 0.274);
+    color: white;
+    width: 10vw;
+    cursor: pointer;
+    font-size:  1vw;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.form-container button:hover{
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.textbox {
+    height: 20vh;
+    resize: none;
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    width: 8vw;
+}
+
+.app{
+    width: 5vw;
+    height: 5vw;
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 100px;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+.app:hover{
+    transition: 1s;
+    width: 6vw;
+    height: 6vw;
+    font-size: 4vw;
+
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
+
+.github {
+    background-color: white;
+    color: #333;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
