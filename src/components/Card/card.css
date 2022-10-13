@@ -5,7 +5,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 25px;
+    text-align: center;
 }
+
 
 .upper{
     height: 50vh;
@@ -37,6 +39,10 @@
     flex-direction: column;
     align-items: center;
     font-size: 0.9vw;
+}
+
+.texts h2{
+    font-size: 1.2vw;
 }
 
 .buttons {

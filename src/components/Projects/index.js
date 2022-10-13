@@ -7,7 +7,7 @@ function Projects() {
     {
       title: "Steels Foundation",
       desc: "An Intern project I did when I was an Intern at Argenova. I used ReactJS and Bootstrap to create a donation web application",
-      imgSrc: require("../../assets/bg.jpg"),
+      imgSrc: require("../../assets/project-images/steels.jpg"),
       webpage: "https://steels-foundation.netlify.app",
       github: "https://github.com/Galledan/Steels-Foundation"
     },
@@ -15,22 +15,31 @@ function Projects() {
     {
         title: "Naruto Quiz",
         desc: "An Quiz application I did by using ReactJS",
-        imgSrc: require("../../assets/bg.jpg"),
+        imgSrc: require("../../assets/project-images/narutoquiz.jpg"),
         webpage: "https://my-naruto-quiz.netlify.app",
         github: "https://github.com/Galledan/naruto-quiz"
       },
 
       {
         title: "Portfolio Website",
-        desc: "The website you currently in done by using ReactJS",
-        imgSrc: require("../../assets/bg.jpg"),
-        webpage: "https://my-naruto-quiz.netlify.app",
-        github: "https://github.com/Galledan/naruto-quiz"
+        desc: "The website you currently in. Done by using ReactJS",
+        imgSrc: require("../../assets/project-images/portfolio.jpg"),
+        webpage: "https://onurcelikler.netlify.app",
+        github: "https://github.com/Galledan/my-portfolio"
+      },
+      {
+        title: "Poro Bot",
+        desc: "A discord bot which gives informations about Champions, Items and Players. Done by using Python and Discord.py (not active)",
+        imgSrc: require("../../assets/project-images/porobot.png"),
+        webpage: "",
+        github: "https://github.com/Galledan/LOL-Discord-Bot"
       },
   ];
 
   return (
     <div className="Projects">
+      <h1 className="highlight">My Projects</h1>
+      <div className="cards">
       {myProjects &&
         myProjects.map((project, i) => (
           <div className="card-content">
@@ -43,6 +52,7 @@ function Projects() {
             />
           </div>
         ))}
+         </div>
     </div>
   );
 }

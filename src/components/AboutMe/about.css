@@ -1,6 +1,10 @@
 .AboutMe {
     height: 80%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .me-container {
@@ -14,12 +18,8 @@
     font-size: 3.5vw;
 }
 
-.highlight {
-    background: linear-gradient(0deg, rgb(114, 116, 0) 0%, rgb(229, 255, 0) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .me-container p {
-    padding-inline: 30vw;
+    text-align: center;
+    padding-inline: 20vw;
 }
 

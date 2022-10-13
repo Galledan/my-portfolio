@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./main.css";
 import AboutMe from "../AboutMe";
-import videoBg from "../../assets/videoBg.mp4";
+import videoBg from "../../assets/bg/videoBg.mp4";
 import Projects from "../Projects";
 import Skills from "../Skills";
 import Interests from "../Interests";
@@ -27,7 +27,7 @@ function Main() {
       <div className="content">
         {isLoading && (
           <div className="loading">
-            <h1>Welcome to my web page</h1>
+            <h1>Welcome Visitor</h1>
           </div>
         )}
 
