@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./contact.css";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+
+  const form = useRef()
+
+  const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+  const TEMPLATE = process.env.REACT_APP_EMAILJS_TEMPLATE
+  const SERVICE_KEY = process.env.REACT_APP_EMAILJS_SERVICE_KEY 
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm(String(SERVICE_KEY),String(TEMPLATE), form.current, String(PUBLIC_KEY) )
+    
+  }
+
+  const [name, setName] = useState()
+  const [email, setEmail]= useState()
+  const [message, setMessage] = useState()
+
+
+
   return (
     <div className="Contact">
       <div className="contact-container">
@@ -13,29 +33,37 @@ function Contact() {
           </p>
         </div>
         <div className="contact-form">
-          <form className="form-container">
-            <input type="email" name="name" placeholder="Email" />
-            <input type="text" name="name" placeholder="Name" />
+          <form ref={form} className="form-container">
+            <input type="email" name="from_email" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
+            <input type="text" name="from_name" value={name} placeholder="Name" onChange={(e) => setName(e.target.value)}/>
             <textarea
               className="textbox"
               type="text"
-              name="name"
+              name="from_message"
               placeholder="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
-            <button type="submit">Submit</button>
+            <button onClick={sendEmail} type="submit">Submit</button>
           </form>
         </div>
       </div>
       <div className="apps">
+        <a href="https://www.linkedin.com/in/onur-çelikler/" target="_blank" rel="noopener noreferrer">
         <div className="app linkedin">
           <i class="fab fa-linkedin"></i>
         </div>
+        </a>
+        <a href="https://github.com/Galledan" target="_blank" rel="noopener noreferrer">
         <div className="app github">
           <i class="fab fa-github"></i>
         </div>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=905053339031&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
         <div className="app whatsapp">
           <i class="fab fa-whatsapp"></i>
         </div>
+        </a>
       </div>
     </div>
   );

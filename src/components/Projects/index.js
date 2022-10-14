@@ -6,7 +6,7 @@ function Projects() {
   const myProjects = [
     {
       title: "Steels Foundation",
-      desc: "An Intern project I did when I was an Intern at Argenova. I used ReactJS and Bootstrap to create a donation web application",
+      desc: "An Intern project I did when I was an Intern at Argenova. I used ReactJS and Bootstrap to create a donation web application(Data server needs wake up)",
       imgSrc: require("../../assets/project-images/steels.jpg"),
       webpage: "https://steels-foundation.netlify.app",
       github: "https://github.com/Galledan/Steels-Foundation"

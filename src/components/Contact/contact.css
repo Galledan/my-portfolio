@@ -58,6 +58,10 @@
     width: 8vw;
 }
 
+.apps a{
+    text-decoration: none;
+}
+
 .app{
     width: 5vw;
     height: 5vw;
@@ -81,6 +85,7 @@
 
 .linkedin {
     background-color: #0e76a8;
+    color: white;
 }
 
 .github {
@@ -90,4 +95,5 @@
 
 .whatsapp {
     background-color: #25D366;
+    color: white;
 }
