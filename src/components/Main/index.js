@@ -10,7 +10,7 @@ import Contact from "../Contact";
 function Main() {
   const [isLoading, setLoading] = useState(false);
   const [page, setPage] = useState(0);
-  
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -76,15 +76,17 @@ function Main() {
 
         {page !== 0 && (
           <div className="page-container">
-              {page === 1 && <AboutMe />}
-              {page === 2 && <Projects />}
-              {page === 3 && <Skills />}
-              {page === 4 && <Interests />}
-              {page === 5 && <Contact />}
-              <button onClick={() => setPage(0)} className="back-btn">
-              Back
+            <div className="btn">
+            <button onClick={() => setPage(0)} className="back-btn">
+              Back to Main Menu
             </button>
-           
+            </div>
+          
+            {page === 1 && <AboutMe />}
+            {page === 2 && <Projects />}
+            {page === 3 && <Skills />}
+            {page === 4 && <Interests />}
+            {page === 5 && <Contact />}
           </div>
         )}
       </div>

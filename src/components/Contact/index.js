@@ -6,13 +6,10 @@ function Contact() {
 
   const form = useRef()
 
-  const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-  const TEMPLATE = process.env.REACT_APP_EMAILJS_TEMPLATE
-  const SERVICE_KEY = process.env.REACT_APP_EMAILJS_SERVICE_KEY 
 
   const sendEmail = (e) => {
     e.preventDefault()
-    emailjs.sendForm(String(SERVICE_KEY),String(TEMPLATE), form.current, String(PUBLIC_KEY) )
+    emailjs.sendForm("service_7qub36k","template_gxuenjm", form.current, "Ik_GvpAAN3YEzCt72" )
     
   }
 

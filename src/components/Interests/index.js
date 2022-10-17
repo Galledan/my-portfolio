@@ -1,8 +1,11 @@
 import React from 'react'
+import './interests.css'
 
 function Interests() {
   return (
-    <div>Interests</div>
+    <div className='Interests'>
+      <div className='spiderman'/>
+    </div>
   )
 }
 
