@@ -7,9 +7,12 @@
     justify-content: space-around;
 }
 
+
 .logos {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    width: 35vw;
 }
 
 .title1{
