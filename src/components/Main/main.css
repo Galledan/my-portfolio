@@ -94,6 +94,7 @@ video {
 .loading {
     color: white;
     font-size: 2vw;
+    user-select: none;
     animation: fade-inout 4s ease-in-out;
 }
 

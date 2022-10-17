@@ -56,12 +56,12 @@ function Main() {
                 </div>
                 <div className="under-box">Skills</div>
               </div>
-              <div onClick={() => setPage(4)} className="box">
+              {/*<div onClick={() => setPage(4)} className="box">
                 <div className="top-box">
                   <i class="fas fa-laugh"></i>
                 </div>
                 <div className="under-box">Interests</div>
-              </div>
+        </div>*/}
               <div onClick={() => setPage(5)} className="box">
                 <div className="top-box">
                   <i class="fas fa-envelope"></i>

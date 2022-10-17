@@ -21,7 +21,7 @@ function Projects() {
       },
 
       {
-        title: "Portfolio Website",
+        title: "My Portfolio Website",
         desc: "The website you currently in. Done by using ReactJS",
         imgSrc: require("../../assets/project-images/portfolio.jpg"),
         webpage: "https://onurcelikler.netlify.app",
