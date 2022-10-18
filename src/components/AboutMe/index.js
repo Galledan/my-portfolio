@@ -14,7 +14,7 @@
           <div className='me-buttons'>
             <a href="https://twitter.com/galledann" target="_blank" rel="noopener noreferrer"><div className='me-button twitter'><i class="fab fa-twitter"></i></div></a>
             <a href="https://www.instagram.com/onrclklrr/" target="_blank" rel="noopener noreferrer"><div className='me-button instagram'><i class="fab fa-instagram"></i></div></a>
-            <a href="https://twitter.com/galledann" target="_blank" rel="noopener noreferrer"><div className='me-button cv'><i class="fas fa-file"></i></div></a>
+            <a href="CV.pdf" target="_blank"><div className='me-button cv'><i class="fas fa-file"></i></div></a>
           </div>
         </div>
      </div>
