@@ -55,6 +55,39 @@
     resize: none;
 }
 
+.submit-alert {
+    width: 40vw;
+    max-width: 600px;
+    height: 10vh;
+    max-height: 200px;
+    background-color: #036928;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #019b39;
+}
+
+.closeBtn {
+    margin-top: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.closeBtn:hover {
+    color: red;
+}
+
 .apps {
     display: flex;
     flex-direction: column;

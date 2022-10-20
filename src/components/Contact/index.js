@@ -10,12 +10,14 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs.sendForm("service_7qub36k","template_gxuenjm", form.current, "Ik_GvpAAN3YEzCt72" )
+    setIsSubmitted(true)
     
   }
 
   const [name, setName] = useState()
   const [email, setEmail]= useState()
   const [message, setMessage] = useState()
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
 
 
@@ -42,6 +44,10 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             />
             <button onClick={sendEmail} type="submit">Submit</button>
+            {isSubmitted && <div className="submit-alert">
+              <p>Thanks for your message. I will try to contact you as soon as possible.</p>
+              <p className="closeBtn" onClick={() => setIsSubmitted(false)}>X</p>
+            </div>}
           </form>
         </div>
       </div>
