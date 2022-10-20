@@ -6,20 +6,46 @@ function Contact() {
 
   const form = useRef()
 
-
-  const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs.sendForm("service_7qub36k","template_gxuenjm", form.current, "Ik_GvpAAN3YEzCt72" )
-    setIsSubmitted(true)
-    
-  }
-
   const [name, setName] = useState()
   const [email, setEmail]= useState()
   const [message, setMessage] = useState()
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [alertText, setAlertText] = useState("")
 
 
+  
+
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    setIsSubmitted(true)
+    if(validation === true) {
+      setAlertText("Thanks for your submit. I will contact you as soon as possible")
+      emailjs.sendForm("service_7qub36k","template_gxuenjm", form.current, "Ik_GvpAAN3YEzCt72" )
+  }
+    if(validation === false){
+      setAlertText("Please check your inputs.")
+    }
+
+    
+  }
+
+  const validateContact = () => {
+    const mailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const textReg = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/
+    
+    if(!name || name === "") return false
+    if(!textReg.test(name)) return false
+
+    if(!message || message === "") return false
+    if(!textReg.test(message))  return false
+
+    if(!email || email === "") return false
+    if(!mailReg.test(email)) return false
+
+    else return true
+  }
+  const validation = validateContact()
 
   return (
     <div className="Contact">
@@ -45,7 +71,7 @@ function Contact() {
             />
             <button onClick={sendEmail} type="submit">Submit</button>
             {isSubmitted && <div className="submit-alert">
-              <p>Thanks for your message. I will try to contact you as soon as possible.</p>
+              <p>{alertText}</p>
               <p className="closeBtn" onClick={() => setIsSubmitted(false)}>X</p>
             </div>}
           </form>
