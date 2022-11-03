@@ -83,11 +83,6 @@ function Contact() {
           <i class="fab fa-linkedin"></i>
         </div>
         </a>
-        <a href="https://github.com/Galledan" target="_blank" rel="noopener noreferrer">
-        <div className="app github">
-          <i class="fab fa-github"></i>
-        </div>
-        </a>
         <a href="https://api.whatsapp.com/send/?phone=905053339031&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
         <div className="app whatsapp">
           <i class="fab fa-whatsapp"></i>
