@@ -34,6 +34,13 @@ function Projects() {
         webpage: "",
         github: "https://github.com/Galledan/LOL-Discord-Bot"
       },
+      {
+        title: "Damalı Bayrak F1 League",
+        desc: "A web page for a F1 League on F1 games. Advertises the league and shows the results. Done by using ReactJS and Bootstrap",
+        imgSrc: require("../../assets/project-images/dbf1.jpg"),
+        webpage: "https://damalibayrak.netlify.app",
+        github: ""
+      }
   ];
 
   return (

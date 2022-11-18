@@ -25,14 +25,14 @@ function Card(props) {
               View Live <i class="fas fa-file-code"></i>
             </a>
           )}
-          <a
+          {props.github !== "" && <a
             href={props.github}
             target="_blank"
             rel="noopener noreferrer"
             className="showCode"
           >
             View Code <i class="fab fa-github"></i>
-          </a>
+          </a>}
         </div>
       </div>
     </div>
